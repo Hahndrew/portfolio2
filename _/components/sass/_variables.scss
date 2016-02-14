@@ -1,0 +1,42 @@
+/***** Breakpoints ***********************************/
+$xsmall: max-width 550px;
+$small: max-width 777px;
+$medium: max-width 886px;
+$large: 887px;
+
+
+/***** Colors ****************************************/
+
+// Background Colors
+$background-yellow		: #FFFBD2;
+$background-grapefruit	: #FF9985;
+$background-mint		: #8AE0C1;
+$background-honey		: #FFF59C;
+$background-salmon		: #FFAB7E;
+$background-melon		: #A5D695;
+$background-aqua		: #67CFCD;
+
+
+// Design Process Chart Colors
+$grapefruit				: #ED6346;
+$melon					: #71C5A6;
+$honey					: #F8DB88;
+$orange					: #F68E57;
+$mint					: #B0DEA1;
+
+// Text and Background Colors
+$paleblack-base			: #282422;
+$paleblack-display		: rgba(0,0,0,0.75);
+$link					: #0047ba;
+$link-hover				: #0060FA;
+
+// Timeline Colors
+$black					: #080401;
+
+
+/***** Typography *************************************/
+
+// Fonts
+$display-font			: 'Gotham A', 'Gotham B', sans-serif;
+$display-font			: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
+$base-font				: 'Gotham SSm A', 'Gotham SSm B', sans-serif;

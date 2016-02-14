@@ -1,0 +1,335 @@
+@import "compass";
+@import "compass/reset";
+@import "susy";
+@import "breakpoint";
+
+
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+@import "modules";
+
+// ------------------------------------------------
+// ---------------- TYPOGRAPHY --------------------
+// ------------------------------------------------
+.large-p {
+	font-size: 1.8rem;
+	line-height: 2.7rem;
+}
+
+// Links ----------------------------------------
+.link {
+	color: $link;
+}
+.link:hover {
+	color: $link-hover;
+	transition: color 0.5s ease-in-out;
+}
+
+.svg-font {
+	font-family: $base-font;
+	font-weight: 500;
+}
+
+// ------------------------------------------------
+// -------------------- SPLASH --------------------
+// ------------------------------------------------
+.full-screen-body {
+	a {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+	}
+}
+#splash-main-content {
+
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	div {
+		position: absolute;
+		width: 100%;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	hgroup {
+		text-align: center;
+		margin-bottom: 0;
+	}
+	hgroup > h1 {
+		font-family: $display-font;
+		font-size: 2.1rem;
+		font-weight: 700;
+		color: rgba(8,4,1,.80);
+		letter-spacing: 1.75px;
+		text-transform: uppercase;
+		line-height: 2.1rem;
+		margin-bottom: 0;
+	}
+	hgroup > h2 {
+		position: relative;
+		left: 1.5px;
+		font-family: $base-font;
+		font-size: 1.2rem;
+		font-weight: 400;
+		color: rgba(8,4,1,.80);
+		letter-spacing: 4.5px;
+		line-height: 1.2rem;
+		margin-bottom: 0;
+	}
+	p {
+		position: relative;
+		top: 50px;
+		font-size: 1.4rem;
+		font-weight: 400;
+		color: rgba(8,4,1,.50);
+		letter-spacing: 0.5px;
+		text-align: center;
+		margin-bottom: 0;
+		padding-left: 2.4rem;
+		padding-right: 2.4rem;
+	}
+
+}
+
+
+
+
+// ------------------------------------------------
+// -------------------- HEADER --------------------
+// ------------------------------------------------
+#logo {
+	font-weight: 500; //Medium
+	text-transform: uppercase;
+	.ux {
+		text-transform: none;
+		font-weight: 200;} //ExtraLight
+	a .a, a .n, a .d, a .r, a .e, a .w, a .h-1, a .h-2 {
+		-moz-transition: color 0.3s ease-in-out;
+		-webkit-transition: color 0.3s ease-in-out;
+		transition: color 0.3s ease-in-out;}
+
+	@include breakpoint($xsmall) {
+		font-size: 1.2rem;
+	}
+
+}
+// Change Color on Hover
+#logo a:hover .a {
+	color: darken($grapefruit, 7%);
+}
+#logo a:hover .n {
+	color: darken($melon, 10%);
+}
+#logo a:hover .d {
+	color: darken($honey, 20%);
+}
+#logo a:hover .r {
+	color: darken($orange, 10%);
+}
+#logo a:hover .e {
+	color: darken($mint, 10%);
+}
+#logo a:hover .w {
+	color: darken($background-aqua, 10%);
+}
+#logo a:hover .h-1 {
+	color: darken($melon, 10%);
+}
+#logo a:hover .h-2 {
+	color: darken($honey, 20%);
+}
+
+// ------------------ Main Nav -------------------
+// Active Page and Hover Behavior
+.current {
+    box-shadow: 0px -2px 0px $paleblack-base inset;
+}
+
+// Not-active Page Menu Behavior on Hover
+// credit: https://github.com/IanLunn/Hover
+.hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: $paleblack-base;
+  height: 2px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+/* THIS IS OLD CODE for reference
+.hover {
+	border-bottom: 2px solid rgba(8,4,1,0);
+	-moz-transition: border-bottom 0.5s ease-in-out;
+	-webkit-transition: border-bottom 0.5s ease-in-out;
+	transition: border-bottom 0.5s ease-in-out;
+}
+.hover:hover {
+	border-bottom: 2px solid rgba(8,4,1,.87);
+}
+*/
+
+#mainNav-mobile {
+	a {
+		font-size: 1.2rem;
+	}
+}
+
+
+
+// ----------------- Sub Menu --------------------
+// Dropdown on hover
+.topmenu li:hover ul {
+	left: 0 !important;
+}
+// Submenu initial background color
+.submenu li { 
+	background: lighten($background-yellow, 4%);
+}
+
+// Submenu background change on hover with transition
+.dp-two a, .dp-three a, .dp-four a, .dp-five a, .dp-six a, .dp-seven a {
+	-moz-transition: background-color 0.15s ease-in-out;
+	-webkit-transition: background-color 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out;
+}
+.dp-two a:hover {
+	background: $grapefruit;
+}
+.dp-three a:hover {
+	background: $melon;
+}
+.dp-four a:hover {
+	background: $honey;
+}
+.dp-five a:hover {
+	background: $orange;
+}
+.dp-six a:hover {
+	background: $mint;
+}
+.dp-seven a:hover {
+	background: $background-aqua;
+}
+
+
+// ------------------------------------------------
+// ------------------- Skills 1 -------------------
+// ------------------------------------------------
+#designProcessPageTitle {
+	font-size: 4.8rem;
+	line-height: 4.8rem;
+}
+
+
+// ------------------------------------------------
+// ----------------- Skills 2 - 6 -----------------
+// ------------------------------------------------
+
+// Background Colors -----------------------------
+
+.designProcess {
+	background-color: $background-yellow;
+}
+.productDefinition {
+	background-color: $background-grapefruit;
+}
+.researchAnalysis {
+	background-color: $background-mint;
+}
+.interactionDesign {
+	background-color: $background-honey;
+}
+.wireframePrototype {
+	background-color: $background-salmon;
+}
+.usabilityEvaluation {
+	background-color: $background-melon;
+}
+.frontendProgramming {
+	background-color: $background-aqua;
+}
+.about {
+	background-color: $background-yellow;
+}
+.connect {
+	background-color: $background-yellow;
+}
+
+
+#skills1 ul, #skills2 ul, #skills3 ul, #skills4 ul, #skills5 ul, #skills6 ul {
+	list-style-type: square;
+}
+
+#workSample {
+	div {
+		@include border-radius(4px, 4px);
+	}
+	img {
+		@include border-radius(1px, 1px);
+	}
+}
+
+.frontendProgramming {
+	h1 {
+		span {
+			font-size: 3.6rem;
+			font-weight: 300;}
+	}
+}
+
+
+// ------------------------------------------------
+// ----------------- ABOUT PAGE -------------------
+// ------------------------------------------------
+
+// Image Border Radius
+#aboutPageContent {
+	img { @include border-radius(8px, 8px);}
+}
+#aboutPageContent {
+	section p:last-child {
+			margin-top: 4.8rem;
+		}
+}
+
+
+// ------------------------------------------------
+// ------------------ Footer ----------------------
+// ------------------------------------------------
+#footer {
+	background: rgba(255,255,255,0.1);
+}
+.footer-style {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+
