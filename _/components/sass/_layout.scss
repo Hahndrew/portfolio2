@@ -9,6 +9,64 @@ $susy: (
 	gutters: 1/3,
 	gutter-position: split);
 
+//====================== 12 Column GRID SYSTEM
+.column {
+	color: #757575;
+	text-align: center;
+	position: fixed;
+	background: rgba(0,0,0,.10);
+	//background: rgba(0,0,0,0);
+	height: 100%;
+	padding-top: 65px;
+}
+.c1 {
+	@include span(1);
+}
+.c2 {
+	@include span(1);
+	@include push(1);
+}
+.c3 {
+	@include span(1);
+	@include push(2);
+}
+.c4 {
+	@include span(1);
+	@include push(3);
+}
+.c5 {
+	@include span(1);
+	@include push(4);
+}
+.c6 {
+	@include span(1);
+	@include push(5);
+}
+.c7 {
+	@include span(1);
+	@include push(6);
+}
+.c8 {
+	@include span(1);
+	@include push(7);
+}
+.c9 {
+	@include span(1);
+	@include push(8);
+}
+.c10 {
+	@include span(1);
+	@include push(9);
+}
+.c11 {
+	@include span(1);
+	@include push(10);
+}
+.c12 {
+	@include span(1);
+	@include push(11);
+}
+//========================= END OF GRID SYSTEM
 
 // --------------------------------------------------
 // -------------------- GLOBAL ----------------------
@@ -288,6 +346,7 @@ pre,table,fieldset,hr{
 // --------------------------------------------------
 // -------------------- ABOUT -----------------------
 // --------------------------------------------------
+
 #aboutPageTitle {
 	// LARGE LAYOUT ************
 	@include full;
