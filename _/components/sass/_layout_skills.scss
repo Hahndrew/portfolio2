@@ -1,0 +1,144 @@
+
+// --------------------------------------------------
+// -------------- Skills Page 1 ---------------------
+// --------------------------------------------------
+.designProcess {
+
+	#designProcessPageTitle {
+		// LARGE LAYOUT *************
+		@include full;
+		text-align: center;
+		margin-top: 10.8rem;
+		margin-bottom: 13.2rem;
+
+		// MEDIUM LAYOUT ************
+		@include breakpoint($medium) {
+			margin-top: 12.0rem;
+		}
+
+		// SMALL LAYOUT *************
+		@include breakpoint($small) {
+			margin-bottom: 10.8rem;
+		}
+
+		// XSMALL LAYOUT ************
+		@include breakpoint($xsmall) {
+			font-size: 2.8rem;
+		}
+
+	}//#designProcessPageTitle
+
+	figure {
+		// LARGE LAYOUT *************
+		@include span(10);
+		@include push(1);
+		img { max-width: 100%;}
+		svg { max-width: 100%;}
+	}//figure
+
+}
+
+.shorter-margin {
+	margin-bottom: 4.8rem !important;
+}
+
+
+// --------------------------------------------------
+// ----------- Skills Page 2 - 6 --------------------
+// --------------------------------------------------
+#timeline {
+	@include span(1);
+	height: 100%;
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		display: none;
+	}
+}
+#skillsPageTitle {
+	// LARGE LAYOUT *************
+	@include span(11);
+	margin-top: 6.0rem;
+	margin-bottom: 3.6rem;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		@include span(11);
+		font-size: 4.0rem;
+		margin-top: 8.4rem;
+		margin-bottom: 3.6rem;
+	}
+
+	// SMALL LAYOUT *************
+	@include breakpoint($small) {
+		img { display: none; }
+		margin-top: 9.6rem;
+
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		font-size: 2.8rem;
+		line-height: 4.2rem;
+		margin-bottom: 1.2rem;
+		margin-left: 1.2rem;
+	}
+	span {
+		@include breakpoint($small) {
+			font-size: 2.8rem;}
+	}
+
+}
+.frontendProgramming #skillsPageTitle {
+	// SMALL LAYOUT *************
+	@include breakpoint($small) {
+		margin-top: 8.4rem;
+	}
+}
+#skills1, #skills2, #skills3, #skills4, #skills5, #skills6 {
+	// LARGE LAYOUT *************
+	@include span(4);
+	p { margin-bottom: 6.0rem;
+		margin-bottom: 2.4rem; }
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		@include span(10);
+		p { margin-bottom: 3.6rem; }
+		.skills-list { display: none; }
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		margin-left: 1.2rem;
+		p {
+			margin-bottom: 1.2rem;
+			font-size: 1.4rem;
+			line-height: 2.1rem;}
+	}
+
+}
+#workSample1, #workSample2, #workSample3, #workSample4, #workSample5, #workSample6 {
+	// LARGE LAYOUT *************
+	@include span(6);
+	margin-left: 30px;
+
+	#slider1, #slider2, #slider3, #slider4, #slider5, #slider6 {
+		margin-top: 0.6rem;
+		height: auto;
+		width: auto; }
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium){
+		@include span(10);
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		display: none;
+	}
+
+}
+.frontendProgramming h1 {
+	padding-top: 0.8rem;
+}
