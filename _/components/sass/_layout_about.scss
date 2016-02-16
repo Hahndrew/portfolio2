@@ -5,8 +5,8 @@
 #aboutPageTitle {
 	// LARGE LAYOUT ************
 	@include full;
-	@include push(2);
-	text-align: left;
+	//@include push(2); 
+	text-align: center;
 	margin-top: 10.8rem;
 	margin-bottom: 9.6rem;
 
