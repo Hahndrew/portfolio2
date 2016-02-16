@@ -1,0 +1,73 @@
+// --------------------------------------------------
+// -------------------- ABOUT -----------------------
+// --------------------------------------------------
+
+#aboutPageTitle {
+	// LARGE LAYOUT ************
+	@include full;
+	text-align: center;
+	margin-top: 10.8rem;
+	margin-bottom: 9.6rem;
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		margin-top: 12.0rem;
+		margin-bottom: 6.0rem;
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		font-size: 2.8rem;
+		line-height: 4.2rem;
+		margin-bottom: 2.4rem;
+	}
+
+}
+#aboutPageContent figure {
+	// LARGE LAYOUT ************
+	@include span(3);
+	@include push(2);
+	img { max-width: 100%; }
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		@include span(4);
+		@include push(4);
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		@include span(6);
+		@include push(3);
+	}
+
+}
+#aboutPageContent section {
+	// Pulling up to align with image top
+	position: relative;
+	top: -5px;
+
+	// LARGE LAYOUT ************
+	@include span(5);
+	text-align: left;
+	p:last-child {
+		margin-bottom: 8.4rem;
+	}
+
+	// MEDIUM LAYOUT ************
+	@include breakpoint($medium) {
+		@include span(8);
+		@include push(2);
+	}
+
+	// XSMALL LAYOUT ************
+	@include breakpoint($xsmall) {
+		@include span(10);
+		@include push(1);
+		p {
+			margin-bottom: 1.2rem;
+			font-size: 1.4rem;
+			line-height: 2.1rem;}
+	}
+
+}
