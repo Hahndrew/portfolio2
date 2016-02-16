@@ -6,12 +6,14 @@
 // Global Settings
 $susy: (
 	columns: 12,
-	gutters: 1/3,
-	gutter-position: split);
+	gutters: 1/4,
+	gutter-position: split
+);
 
 //====================== 12 Column GRID SYSTEM
 .column {
 	color: #757575;
+	//color: rgba(255,255,255,0);
 	text-align: center;
 	position: fixed;
 	background: rgba(0,0,0,.10);

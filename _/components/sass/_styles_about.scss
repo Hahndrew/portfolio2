@@ -1,0 +1,13 @@
+// ------------------------------------------------
+// ----------------- ABOUT PAGE -------------------
+// ------------------------------------------------
+
+// Image Border Radius
+#aboutPageContent {
+	img { @include border-radius(8px, 8px);}
+}
+#aboutPageContent {
+	section p:last-child {
+			margin-top: 4.8rem;
+		}
+}
