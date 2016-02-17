@@ -27,14 +27,16 @@
 		margin-bottom: 0;
 	}
 	hgroup > h1 {
-		font-family: $display-font;
-		font-size: 2.1rem;
-		font-weight: 700;
+		position: relative;
+		right: -2px;
+		font-family: $display-font-secondary;
+		font-size: 2.4rem;
+		font-weight: 800;
 		color: rgba(8,4,1,.80);
-		letter-spacing: 1.75px;
+		letter-spacing: 7.35px;
 		text-transform: uppercase;
-		line-height: 2.1rem;
-		margin-bottom: 0;
+		line-height: 2.4rem;
+		margin-bottom: 10px;
 	}
 	hgroup > h2 {
 		position: relative;
@@ -44,6 +46,7 @@
 		font-weight: 400;
 		color: rgba(8,4,1,.80);
 		letter-spacing: 4.5px;
+		text-transform: uppercase;
 		line-height: 1.2rem;
 		margin-bottom: 0;
 	}
