@@ -6,7 +6,6 @@
 	line-height: 4.8rem;
 }
 
-
 // ------------------------------------------------
 // ----------------- Skills 2 - 6 -----------------
 // ------------------------------------------------
@@ -41,18 +40,16 @@
 	background-color: $background-yellow;
 }
 
+// body font ---------------------------------------
+
+.large-body-font {
+	font-size: 2.0rem;
+	line-height: 3.0rem;
+}
+
 
 #skills1 ul, #skills2 ul, #skills3 ul, #skills4 ul, #skills5 ul, #skills6 ul {
 	list-style-type: square;
-}
-
-#workSample {
-	div {
-		@include border-radius(4px, 4px);
-	}
-	img {
-		@include border-radius(1px, 1px);
-	}
 }
 
 .frontendProgramming {
