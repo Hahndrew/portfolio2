@@ -14,6 +14,7 @@
 @import "styles_splash";
 @import "styles_about";
 @import "styles_skills";
+@import "styles_contact";
 @import "modules";
 
 // ------------------------------------------------
@@ -150,7 +151,8 @@
 }
 // Submenu initial background color
 .submenu li { 
-	background: lighten($background-yellow, 4%);
+	//background: lighten($background-yellow, 4%);
+	background: darken($background-white, 2%);
 }
 
 // Submenu background change on hover with transition
