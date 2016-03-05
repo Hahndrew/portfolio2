@@ -109,7 +109,9 @@ pre,table,fieldset,hr{
 	padding: 1.2rem;
 
 	#logo { 
+		@include span(3);
 		float: left;
+
 		.ux {
 			@include breakpoint($xsmall) {
 			display: none;}
@@ -122,6 +124,7 @@ pre,table,fieldset,hr{
 		float: right;
 
 		.topmenu {
+			margin-top: 0.5rem;
 			margin-bottom: 0;
 
 			li {
