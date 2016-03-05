@@ -27,6 +27,7 @@ $mint					: #B0DEA1;
 
 // Text and Background Colors
 $paleblack-base			: #282422;
+$secondary-base			: #757575;
 $paleblack-display		: rgba(0,0,0,0.75);
 $link					: #0047ba;
 $link-hover				: #0060FA;
@@ -38,10 +39,6 @@ $black					: #080401;
 /***** Typography *************************************/
 
 // Fonts
-//$display-font			: 'Gotham Rounded A', 'Gotham Rounded B', sans-serif;
-$display-font-secondary : 'Gotham A', 'Gotham B';
-//$base-font				: 'Gotham SSm A', 'Gotham SSm B', sans-serif;
-
-// NEW TYPOGRAPHY
-$base-font				: 'Nitti', 'Nitti-Grotesk', 'Gotham SSm A', 'Gotham SSm B', sans-serif;
-$display-font			: 'Gotham A', 'Gotham B', 'Nitti-Grotesk-medium', 'Gotham Rounded A', 'Gotham Rounded B';
+$base-font				: 'Nitti', 'Gotham SSm A', 'Gotham SSm B', sans-serif;
+$display-font			: 'Nitti-Grotesk-medium', sans-serif;
+$display-font-secondary : 'Gotham A', 'Gotham B', sans-serif;

@@ -6,8 +6,8 @@
 	// LARGE LAYOUT ************
 	@include span(10);
 	@include push(2); 
-	margin-top: 10.8rem;
-	margin-bottom: 9.6rem;
+	margin-top: 14.4rem;
+	margin-bottom: 7.2rem;
 
 	// MEDIUM LAYOUT ************
 	@include breakpoint($medium) {
@@ -48,7 +48,7 @@
 	top: -5px;
 
 	// LARGE LAYOUT ************
-	@include span(5);
+	@include span(4);
 	text-align: left;
 	p:last-child {
 		margin-bottom: 8.4rem;

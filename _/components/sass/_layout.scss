@@ -12,12 +12,12 @@ $susy: (
 
 //====================== 12 Column GRID SYSTEM
 .column {
-	color: #757575; //on
-	//color: rgba(255,255,255,0); //off
+	//color: #757575; //on
+	color: rgba(255,255,255,0); //off
 	text-align: center;
 	position: fixed;
-	background: rgba(0,0,0,.10); //on
-	//background: rgba(0,0,0,0); //off
+	//background: rgba(0,0,0,.10); //on
+	background: rgba(0,0,0,0); //off
 	height: 100%;
 	padding-top: 65px;
 }

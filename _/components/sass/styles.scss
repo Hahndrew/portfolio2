@@ -20,10 +20,12 @@
 // ------------------------------------------------
 // ---------------- TYPOGRAPHY --------------------
 // ------------------------------------------------
+/*
 .large-p {
 	font-size: 1.8rem;
 	line-height: 2.7rem;
 }
+*/
 
 // Links ----------------------------------------
 .link {
@@ -47,6 +49,7 @@
 	font-weight: 500; //Medium
 	text-transform: uppercase;
 	.ux {
+		color: $secondary-base;
 		text-transform: none;
 		font-weight: 200;} //ExtraLight
 	a .a, a .n, a .d, a .r, a .e, a .w, a .h-1, a .h-2 {
