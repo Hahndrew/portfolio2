@@ -12,12 +12,12 @@ $susy: (
 
 //====================== 12 Column GRID SYSTEM
 .column {
-	//color: #757575; //on
-	color: rgba(255,255,255,0); //off
+	color: #757575; //on
+	//color: rgba(255,255,255,0); //off
 	text-align: center;
 	position: fixed;
-	//background: rgba(0,0,0,.10); //on
-	background: rgba(0,0,0,0); //off
+	background: rgba(0,0,0,.10); //on
+	//background: rgba(0,0,0,0); //off
 	height: 100%;
 	padding-top: 65px;
 }
@@ -108,23 +108,35 @@ pre,table,fieldset,hr{
 	z-index: 100;
 	padding: 1.2rem;
 
+	// LOGO ---------------------------------------
+
 	#logo { 
 		@include span(3);
 		float: left;
 
-		.ux {
+		// DESKTOP & TABLET ---------------
+		.big {
 			@include breakpoint($xsmall) {
 			display: none;}
-		} //end of .ux
+		}
+
+		// MOBILE -------------------------
+		.small {
+			display: none;
+			@include breakpoint($xsmall) {
+				display: block;}
+		}
+
 	} //end of logo
 
-	// DESKTOP & TABLET ----------------------------
+	// NAVIGATION ----------------------------------
 
 	#mainNav {
 		float: right;
 
+		// DESKTOP & TABLET ---------------
 		.topmenu {
-			margin-top: 0.5rem;
+			margin-top: 0.6rem;
 			margin-bottom: 0;
 
 			li {
@@ -133,59 +145,29 @@ pre,table,fieldset,hr{
 				a { display: block;
 					padding: 0 2.4rem 1.2rem 2.4rem;} } //li
 
-			.submenu {
-				float: none;
-				width: auto;
-				height: auto;
-				position: absolute;
-				z-index: 10;
-				top: 3.6rem;
-				left: -9000rem; // pushing it out of view to hide
-				li {
-					float: none;
-					a { padding-top: 1.2rem;
-						border-bottom: 1px solid #808080;}
-					&:last-child a {border-bottom: none;}
-					white-space: nowrap;}
+		}//topmenu
 
-				
-				// TRYING TO ANIMATE DROPDOWN
-
-				//max-height: 0;
-				//-moz-transition: max-height 0.5s ease-in-out;
-				//-webkit-transition: max-height 0.5s ease-in-out;
-				//-o-transition: max-height 0.5s ease-in-out;
-				//transition: max-height 0.5s ease-in-out;
-
-
-			} //submenu
-		} //topmenu
-
-		// Hide on xsmall layout
+		.desktop-nav {
 		@include breakpoint($xsmall) {
+			display: none;}
+		}
+
+
+		// MOBILE -----------------------
+		.mobile-nav {
 			display: none;
+
+			@include breakpoint($xsmall) {
+				display: inline-block;}
+
+			a {
+				font-size: 1.4rem;
+				line-height: 2.4rem;
+				padding: 0.6rem 0 1.2rem 2.4rem !important;
+			}
 		}
 
 	} //mainNav
-
-
-	// MOBILE -------------------------------------
-
-	#mainNav-mobile {
-		float: right;
-		display: none;
-		
-		// Show on xsmall layout
-		@include breakpoint($xsmall) {
-			display: block;
-
-			li {
-				display: inline-block;
-				padding-left: 1.2rem;}
-			li:first-child {
-				padding-left: 0;}
-		} //end of breakpoint
-	} //end of #mainNav-mobile
 
 
 } //end of pageHeader
