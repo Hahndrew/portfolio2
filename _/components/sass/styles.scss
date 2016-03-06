@@ -8,12 +8,11 @@
 @import "mixins";
 @import "base";
 @import "layout";
-@import "layout_skills";
 @import "layout_about";
+@import "layout_work";
 @import "layout_contact";
-@import "styles_splash";
 @import "styles_about";
-@import "styles_skills";
+@import "styles_work";
 @import "styles_contact";
 @import "modules";
 
@@ -46,47 +45,15 @@
 // -------------------- HEADER --------------------
 // ------------------------------------------------
 #logo {
-	font-weight: 500; //Medium
-	text-transform: uppercase;
-	.ux {
-		color: $secondary-base;
-		text-transform: none;
-		font-weight: 200;} //ExtraLight
-	a .a, a .n, a .d, a .r, a .e, a .w, a .h-1, a .h-2 {
-		-moz-transition: color 0.3s ease-in-out;
-		-webkit-transition: color 0.3s ease-in-out;
-		transition: color 0.3s ease-in-out;}
 
 	@include breakpoint($xsmall) {
+		// display just logo
 		font-size: 1.2rem;
 	}
 
 }
-// Change Color on Hover
-#logo a:hover .a {
-	color: darken($grapefruit, 7%);
-}
-#logo a:hover .n {
-	color: darken($melon, 10%);
-}
-#logo a:hover .d {
-	color: darken($honey, 20%);
-}
-#logo a:hover .r {
-	color: darken($orange, 10%);
-}
-#logo a:hover .e {
-	color: darken($mint, 10%);
-}
-#logo a:hover .w {
-	color: darken($background-aqua, 10%);
-}
-#logo a:hover .h-1 {
-	color: darken($melon, 10%);
-}
-#logo a:hover .h-2 {
-	color: darken($honey, 20%);
-}
+// Change Logo Color on Hover
+
 
 // ------------------ Main Nav -------------------
 // Active Page and Hover Behavior
@@ -128,17 +95,6 @@
   left: 0;
   right: 0;
 }
-/* THIS IS OLD CODE for reference
-.hover {
-	border-bottom: 2px solid rgba(8,4,1,0);
-	-moz-transition: border-bottom 0.5s ease-in-out;
-	-webkit-transition: border-bottom 0.5s ease-in-out;
-	transition: border-bottom 0.5s ease-in-out;
-}
-.hover:hover {
-	border-bottom: 2px solid rgba(8,4,1,.87);
-}
-*/
 
 #mainNav-mobile {
 	a {
@@ -152,36 +108,7 @@
 .topmenu li:hover ul {
 	left: 0 !important;
 }
-// Submenu initial background color
-.submenu li { 
-	//background: lighten($background-yellow, 4%);
-	background: darken($background-white, 2%);
-}
 
-// Submenu background change on hover with transition
-.dp-two a, .dp-three a, .dp-four a, .dp-five a, .dp-six a, .dp-seven a {
-	-moz-transition: background-color 0.15s ease-in-out;
-	-webkit-transition: background-color 0.15s ease-in-out;
-	transition: background-color 0.15s ease-in-out;
-}
-.dp-two a:hover {
-	background: $grapefruit;
-}
-.dp-three a:hover {
-	background: $melon;
-}
-.dp-four a:hover {
-	background: $honey;
-}
-.dp-five a:hover {
-	background: $orange;
-}
-.dp-six a:hover {
-	background: $mint;
-}
-.dp-seven a:hover {
-	background: $background-aqua;
-}
 
 
 // ------------------------------------------------
