@@ -3,5 +3,59 @@
 // --------------------------------------------------
 
 #workPageTitle {
-	
+
 }
+
+.project-half-card {
+	@include span(4);
+	@include push(2);
+	margin-bottom: 2.8rem;
+	height: 350px;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+.project-full-card {
+	@include span(8);
+	@include push(2);
+	margin-bottom: 2.8rem;
+	height: 350px;
+	border-radius: 2px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+
+
+.project-one {
+	background-color: $background-mint;
+}
+.project-two {
+	@include span(4);
+	@include push(0);
+	background-color: $background-melon;
+}
+.project-three {
+	background-color: $background-salmon;
+}
+.project-four {
+	background-color: $background-aqua;
+}
+.project-five {
+	@include span(4);
+	@include push(0);
+	background-color: $background-honey;
+}
+.project-six {
+	background-color: $background-mint;
+}
+
+/*
+$background-yellow		: #FFFBD2;
+$background-grapefruit	: #FF9985;
+$background-mint		: #8AE0C1;
+$background-honey		: #FFF59C;
+$background-salmon		: #FFAB7E;
+$background-melon		: #A5D695;
+$background-aqua		: #67CFCD;
+*/

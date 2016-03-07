@@ -89,7 +89,7 @@ h1,h2,h3,h4,h5,h6,hgroup,
 ul,ol,dd,
 p,figure,
 pre,table,fieldset,hr{
-    margin-bottom: 2.4rem;}
+    margin-bottom: 2.8rem;}
 
  /*micro-clearfix by Nicolas Gallagher http://nicolasgallagher.com/micro-clearfix-hack*/
 /* For modern browsers */
@@ -170,8 +170,8 @@ pre,table,fieldset,hr{
 
 			a {
 				font-size: 1.4rem;
-				line-height: 2.4rem;
-				padding: 0.6rem 0 1.2rem 2.4rem !important;
+				line-height: 2.8rem;
+				padding: 0.6rem 0.5rem 1.2rem 2.4rem !important;
 			}
 		}
 
@@ -186,6 +186,7 @@ pre,table,fieldset,hr{
 // ------------------------------------------------
 
 .page-title {
+
 	// DESKTOP
 	@include span(10);
 	@include push(2); 
@@ -196,14 +197,14 @@ pre,table,fieldset,hr{
 	@include breakpoint($medium) {
 		@include full;
 		text-align: center;
-		margin-top: 12.6rem;
-		margin-bottom: 5.6rem;}
+		margin-bottom: 4.2rem;}
 
 	// MOBILE
 	@include breakpoint($xsmall) {
-		font-size: 2.8rem;
-		line-height: 4.2rem;
-		margin-bottom: 2.4rem;}	
+		font-size: 4.8rem;
+		line-height: 5.6rem;
+		margin-top: 11.2rem;
+		margin-bottom: 4.2rem;}	
 }
 
 
