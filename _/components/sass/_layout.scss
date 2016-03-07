@@ -1,3 +1,8 @@
+// Vertical Rhythm
+// 1.4rem
+
+
+
 // --------------------------------------------------
 // ---------------- SUSY SETUP ----------------------
 // --------------------------------------------------
@@ -12,12 +17,12 @@ $susy: (
 
 //====================== 12 Column GRID SYSTEM
 .column {
-	color: #757575; //on
-	//color: rgba(255,255,255,0); //off
+	//color: #757575; //on
+	color: rgba(255,255,255,0); //off
 	text-align: center;
 	position: fixed;
-	background: rgba(0,0,0,.10); //on
-	//background: rgba(0,0,0,0); //off
+	//background: rgba(0,0,0,.10); //on
+	background: rgba(0,0,0,0); //off
 	height: 100%;
 	padding-top: 65px;
 }
@@ -69,6 +74,9 @@ $susy: (
 	@include push(11);
 }
 //========================= END OF GRID SYSTEM
+
+
+
 
 // --------------------------------------------------
 // -------------------- GLOBAL ----------------------
@@ -171,6 +179,36 @@ pre,table,fieldset,hr{
 
 
 } //end of pageHeader
+
+
+// ------------------------------------------------
+// -------------------- MAIN ----------------------
+// ------------------------------------------------
+
+.page-title {
+	// DESKTOP
+	@include span(10);
+	@include push(2); 
+	margin-top: 12.6rem;
+	margin-bottom: 5.6rem;
+
+	// TABLET
+	@include breakpoint($medium) {
+		@include full;
+		text-align: center;
+		margin-top: 12.6rem;
+		margin-bottom: 5.6rem;}
+
+	// MOBILE
+	@include breakpoint($xsmall) {
+		font-size: 2.8rem;
+		line-height: 4.2rem;
+		margin-bottom: 2.4rem;}	
+}
+
+
+
+
 
 // ------------------------------------------------
 // ------------------ Footer ----------------------
